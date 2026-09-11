@@ -1,0 +1,73 @@
+============================================================
+ GIT SESSION SUMMARY — c:/javaApps/2ndYear
+ Created: 11/09/2026
+============================================================
+
+--- WHAT WE DID ---
+
+1. BUILT A RECURSIVE STACK SORTER
+   - File: Stacks/App.java
+   - Uses your existing Stacks/stack.java (no changes needed)
+   - Two recursive methods:
+     * sortStack()  — pops all elements recursively, then inserts each
+                       back in sorted order using sortedInsert()
+     * sortedInsert() — recursively finds the correct position for an
+                         element in a sorted stack
+   - No extra arrays/collections used — only the stack + recursion call stack
+   - Sorts in ASCENDING order (smallest on top)
+
+   Sample output:
+     Before: 50 30 10 60 40 20
+     After:  10 20 30 40 50 60
+
+2. SET UP GIT IN THE PROJECT
+   - Initialized git repo: git init
+   - Configured user: Nathaniel <nathaniel@example.com>
+   - First commit: "Initial commit: recursive stack sorter + existing projects"
+   - 17 files committed (all Java files + .class files + agent configs)
+
+3. LEARNED GIT WORKFLOW
+   - git status       — see what files are modified
+   - git add <file>   — stage changes for commit
+   - git commit -m "message" — save a checkpoint
+   - git log --oneline — view commit history
+   - git diff         — see unstaged changes
+   - git diff --staged — see staged (but uncommitted) changes
+   - git diff HEAD    — see ALL changes (staged + unstaged)
+   - git show <hash>  — see details of a specific commit
+
+   IMPORTANT: git log only shows COMMITTED changes.
+   Changes must go through: edit → git add → git commit → appears in git log
+
+4. MADE SEVERAL COMMITS DURING THE SESSION:
+   ea1af37  Added 25 to the stack
+   3aedef8  Add value 15 to the stack
+   e4e2d6b  Add two more values (5 and 45) to test stack sorting
+   2a942e3  Initial commit: recursive stack sorter + existing projects
+
+5. KEY CONCEPTS DISCUSSED
+   - Git vs GitHub: Git = local version control tool; GitHub = online hosting service
+   - Context window: the amount of conversation text I can remember (currently ~38% used)
+   - When context fills up: oldest messages are forgotten, but conversation continues
+
+--- HOW TO CONTINUE ---
+
+- To see history:    git log --oneline
+- To make a change:  edit a file → git add <file> → git commit -m "msg"
+- To see changes:    git diff        (unstaged)
+                     git diff --staged (staged only)
+                     git diff HEAD     (all changes)
+- To run the program:
+      javac Stacks/stack.java Stacks/App.java
+      java -cp . Stacks.App
+- To go back to a checkpoint:
+      git reset --hard <commit-hash>
+
+--- GIT CONFIG ---
+   user.name = Nathaniel
+   user.email = nathaniel@example.com
+   repo location: c:/javaApps/2ndYear
+
+============================================================
+ END OF SUMMARY
+============================================================

@@ -15,6 +15,7 @@ public class App {
         theStack.push(5);
         theStack.push(45);
         theStack.push(15);
+        theStack.push(25);
 
         System.out.println("=== Stack Before Sorting ===");
         printStack(theStack);

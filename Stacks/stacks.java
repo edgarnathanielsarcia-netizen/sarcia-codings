@@ -1,11 +1,11 @@
 package Stacks;
 
-public class stack {
+public class stacks {
     private int maxSize;
     private long [] stackArray;
     private int top;
 
-    public stack(int size){
+    public stacks(int size){
         this.maxSize = size;
         this.stackArray = new long [maxSize];
         this.top = -1;

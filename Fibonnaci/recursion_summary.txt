@@ -1,0 +1,49 @@
+Recursion Quick Summary
+
+1. Base case stops recursion
+   if (n == 0) return 0;
+   if (n <= 1) return 1;
+
+2. Recursive call reduces the problem
+   return n * factorial(n - 1);
+   return 1 + levels(n / 2);
+
+3. Order matters
+   - Print AFTER recursive call -> prints bottom-to-top
+   - Print BEFORE recursive call -> prints top-to-bottom
+
+4. Factorial
+   static int factorial(int n) {
+       if (n <= 1) return 1;
+       return n * factorial(n - 1);
+   }
+   Example: factorial(4) = 24
+
+5. Power
+   static int power(int base, int exp) {
+       if (exp == 0) return 1;
+       return base * power(base, exp - 1);
+   }
+   Example: power(2, 4) = 16
+
+6. Counting levels
+   static int levels(int n) {
+       if (n == 0) return 0;
+       return 1 + levels(n / 2);
+   }
+   Example: levels(8) = 4
+
+7. Big O
+   - O(1): constant time
+   - O(log n): halves each time
+   - O(n): one call per item / one loop per item
+   - O(n^2): nested loops
+
+8. Recursive factorial time complexity
+   O(n)
+
+9. Memory / stack use in recursion
+   Recursion uses stack space, so it can take O(n) memory in many cases.
+
+Key idea:
+Recursion goes down until the base case, then comes back up and combines the results.

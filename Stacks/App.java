@@ -5,7 +5,7 @@ public class App {
     public static void main(String[] args) {
 
         // Create a stack with unsorted values
-        stack theStack = new stack(10);
+        stacks theStack = new stacks(10);
         theStack.push(20);
         theStack.push(40);
         theStack.push(60);
@@ -30,7 +30,7 @@ public class App {
     }
 
     // Recursively sort the stack in ascending order (smallest on top)
-    public static void sortStack(stack s) {
+    public static void sortStack(stacks s) {
         // Base case: if stack is empty, we're done
         if (s.isEmpty()) {
             return;
@@ -48,7 +48,7 @@ public class App {
 
     // Recursively insert a value into a sorted stack
     // The stack is sorted in ascending order (smallest on top)
-    public static void sortedInsert(stack s, long x) {
+    public static void sortedInsert(stacks s, long x) {
         // Base case: if stack is empty OR x is smaller than top, push x
         // (x belongs on top to maintain ascending order - smallest on top)
         if (s.isEmpty() || x < s.peek()) {
@@ -67,7 +67,7 @@ public class App {
     }
 
     // Helper method to print the stack without destroying it
-    public static void printStack(stack s) {
+    public static void printStack(stacks s) {
         // We need to pop everything to print, then rebuild
         if (s.isEmpty()) {
             System.out.println("(empty)");

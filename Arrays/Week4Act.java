@@ -3,6 +3,7 @@ package Arrays;
 public class Week4Act {
 
     public static void main(String[] args) {
+    //// 1ST PROGRAM
          /*int [] numbers = {12, 25, 7, 18, 30, 42, 9, 15};
          int target = 100;
          boolean checker = false;
@@ -19,6 +20,7 @@ public class Week4Act {
         } 
 
     }
+    // 2ND PROGRAM
      System.out.println("Total Comparisons: " + comparison);*/
         /*int executed = 0;
         int n = 2;
@@ -32,6 +34,8 @@ public class Week4Act {
       }
         System.out.println(executed);*/
 
+
+    // 3RD PROGRAM
         /*int[] values = {45, 12, 89, 34, 67, 23, 91, 8, 56, 73};
         int largest = values[0]; 
         int comparisons = 0;
@@ -51,6 +55,8 @@ public class Week4Act {
         System.out.println("Largest Value: " + largest);*/
 
         /* 
+
+    // 4TH PROGRAM
         int[] values = {5, 3, 8, 2, 5, 9, 3, 7};
         int comparisons = 0;
 

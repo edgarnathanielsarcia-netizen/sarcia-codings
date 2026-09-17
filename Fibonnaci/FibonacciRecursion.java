@@ -35,7 +35,9 @@ try { // INPUT VALIDATION
 		System.err.println("ERROR: Enter integers only"); // displays an error message
 																
 	} 
+	
   }
+  
 }
 
 
